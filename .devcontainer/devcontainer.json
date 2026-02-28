@@ -1,0 +1,21 @@
+{
+    "name": "k3d-landscape-on-demand",
+    "image": "mcr.microsoft.com/devcontainers/base:1-ubuntu-22.04",
+
+    "features": {
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+            "version": "latest",
+            "helm": "latest",
+            "minikube": "latest"
+        }
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+}
